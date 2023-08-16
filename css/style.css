@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: url('D:/short course/frontend/asset/mesh-609.png');
+    background: url('../asset/mesh-609.png');
     /* background-image: url('https://img.freepik.com/premium-vector/modern-gradient-background-with-vibrant-colors_336924-4189.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
