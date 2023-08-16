@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <main class="content">
+                <h1>Kalkulator Luas & Keliling Segitiga</h1>
+                <img src="asset/segitiga.jpg">
+                <section class="input-section" id="area-section">
+                    <label for="height-input">Tinggi(t)</label>
+                    <input type="number" id="height-input" placeholder="0" min="0">
+                    <label for="base-input">Alas(a)</label>
+                    <input type="number" id="base-input" placeholder="0" min="0" >
+                </section>
+                <section class="input-section" id="perimeter-section" style="display: none;">
+                    <label for="a-input">Panjang Sisi a</label>
+                    <input type="number" id="a-input" placeholder="0" min="0" >
+                    <label for="b-input">Panjang Sisi b</label>
+                    <input type="number" id="b-input" placeholder="0" min="0" >
+                    <label for="c-input">Panjang Sisi c</label>
+                    <input type="number" id="c-input" placeholder="0" min="0" >
+                </section>
+                <div class="flex-container" id="area-buttons">
+                    <button class="switch" id="toPerimeter">Go To Perimeter</button>
+                    <button class="calculate" id="area" onclick="hasilLuas()">Calculate</button>
+                    <button class="reset" id="resetArea" onclick="hapusArea()">Reset</button>
+                </div>
+                <div class="flex-container" id="perimeter-buttons" style="display: none;">
+                    <button class="switch" id="toArea">Go To Area</button>
+                    <button class="calculate" id="perimeter" onclick="hasilKeliling()">Calculate</button>
+                    <button class="reset" id="resetPerimeter" onclick="hapusPerimeter()">Reset</button>
+                </div>
+                <div class="result" id="area-result">0</div>
+                <div class="result" id="perimeter-result" style="display: none;">0</div>
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
